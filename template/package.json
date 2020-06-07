@@ -17,15 +17,17 @@
   },
   "main": "index.js",
   "scripts": {
-    "pretest": "github-lint",
-    "test": "ava",
+    "pretest": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
+    "test": "eslint . && ava",
     "start": "node ./index.js"
   },
   "dependencies": {},
   "devDependencies": {
-    "ava": "^3.5.1",
-    "eslint": "^6.8.0",
-    "eslint-plugin-github": "^3.4.1"
+    "@github/prettier-config": "^0.0.4",
+    "ava": "^3.8.2",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-github": "^4.0.1"
   },
   "ava": {
     "files": [
@@ -33,5 +35,6 @@
     ],
     "failFast": true,
     "verbose": true
-  }
+  },
+  "prettier": "@github/prettier-config"
 }

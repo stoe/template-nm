@@ -1,4 +1,4 @@
 /**
  * {{_ "startCase" name}}.
  */
-module.exports = () => {};
+module.exports = () => {}
