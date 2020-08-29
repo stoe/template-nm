@@ -1,6 +1,6 @@
 # template-nm
 
-> A template for node modules.
+> A template for Node modules.
 
 ## Install
 
